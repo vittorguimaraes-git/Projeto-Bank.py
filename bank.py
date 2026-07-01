@@ -1,7 +1,7 @@
 from time import sleep
+from menu import menu_banco
+
 linha = ("-"*50)
-
-
 usuarios = {}
 on = False
 
@@ -13,9 +13,7 @@ while True:
     print(linha)
     print()
 
-    print("[1] - Login "
-          "\n[2] - Cadastro de usuário"
-          "\n[3] - Sair")
+    menu_banco()
 
     print()
     try:
@@ -41,17 +39,14 @@ while True:
                 print()
 
                 while on:
+
                     print()
                     print(linha)
                     print(f'Bem-Vindo, {username.title()}'.center(50))
                     print(linha)
 
                     print()
-
-                    print("[1] - Ver saldo "
-                          "\n[2] - Fazer transferência de saldo"
-                          "\n[3] - Logout")
-
+                    menu_banco()
                     print()
 
                     opcao = int(input('INFO|Escolha uma opção: '))
@@ -80,6 +75,7 @@ while True:
 
 
         elif opcao == 2:
+
             print(linha)
             print("Cadastro".center(50))
             print(linha)
