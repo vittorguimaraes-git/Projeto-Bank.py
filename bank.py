@@ -1,5 +1,6 @@
 from time import sleep
 from menu import menu_banco
+from login import login_user
 
 linha = ("-"*50)
 usuarios = {}
@@ -22,23 +23,9 @@ while True:
 
 
         if opcao == 1:
-            print(linha)
-            print("Login".center(50))
-            print(linha)
-            print()
+            login_user()
 
-            username = input('Username: ')
-            password = input('Password: ')
-            print()
-
-            if username in usuarios and usuarios[username] == password:
-                on = True
-                print(linha )
-                print('Login com sucesso!')
-                print(linha)
-                print()
-
-                while on:
+            while on:
 
                     print()
                     print(linha)
