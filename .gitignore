@@ -14,3 +14,4 @@ Thumbs.db
 
 # Ignorar configurações locais do VS Code
 .vscode/
+.gitattributes
