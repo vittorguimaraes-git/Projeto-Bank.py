@@ -1,77 +1,64 @@
 from time import sleep
 from menu import menu_banco
+from login import login_user
+from header import header_bank
 
 linha = ("-"*50)
 usuarios = {}
-on = False
+user_on = False
+admin = False
 
 while True:
 
-    print()
-    print(linha)
-    print("BANK".center(50))
-    print(linha)
-    print()
+    # Corpo do programa
 
+    header_bank()
     menu_banco()
-
     print()
+
     try:
-        opcao = int(input("INFO|Escolha uma opção: "))
+        opcao = int(input("INFO| Escolha uma opção: "))
         print()
 
 
         if opcao == 1:
-            print(linha)
-            print("Login".center(50))
-            print(linha)
-            print()
 
-            username = input('Username: ')
-            password = input('Password: ')
-            print()
+            login_user()
 
-            if username in usuarios and usuarios[username] == password:
-                on = True
-                print(linha )
-                print('Login com sucesso!')
+            while user_on:
+
+                print()
+                print(linha)
+                print(f'Bem-Vindo, {username.title()}'.center(50))
                 print(linha)
                 print()
 
-                while on:
+                        # Futura menu de usuário logado
+                    
+
+                opcao = int(input('INFO|Escolha uma opção: '))
+                print(linha)
+
+                if opcao == 1:
+                    print()
+
+                # Lógica futura
+
+                elif opcao == 2:
+                    print()
+
+                # Lógica futura
+
+                elif opcao == 3:
+
 
                     print()
                     print(linha)
-                    print(f'Bem-Vindo, {username.title()}'.center(50))
+                    print("Saindo da sua conta...")
                     print(linha)
-
                     print()
-                    menu_banco()
-                    print()
-
-                    opcao = int(input('INFO|Escolha uma opção: '))
-                    print(linha)
-
-                    if opcao == 1:
-                        print()
-
-                    # Lógica futura
-
-                    elif opcao == 2:
-                        print()
-
-                    # Lógica futura
-
-                    elif opcao == 3:
-
-
-                        print()
-                        print(linha)
-                        print("Saindo da sua conta...")
-                        print(linha)
-                        print()
-                        sleep(1)
-                        on = False
+                    sleep(1)
+                    user_on = False
 
 
         elif opcao == 2:
