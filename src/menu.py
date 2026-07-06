@@ -1,7 +1,5 @@
 def menu_banco():
-    """
-    Função para exibir o menu do banco.
-    """
+    
     print("[1] - Login "
           "\n[2] - Cadastro de usuário"
           "\n[3] - Sair")
