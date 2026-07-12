@@ -6,6 +6,3 @@ def header_bank():
     print("-"*50)
     print()
 
-if __name__ == "__main__":
-    header_bank()
-    
