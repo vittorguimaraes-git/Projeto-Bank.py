@@ -1,4 +1,4 @@
-def menu_banco():
+def menu_bank():
     
     print("[1] - Login "
           "\n[2] - Cadastro de usuário"
