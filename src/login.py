@@ -16,7 +16,7 @@ def login(username, password, dados):
         from time import sleep
 
         while True:
-            header("Menu do Usuário")
+            header(f"Bem vindo, {username.title()}!")
             menu_user()
             print()
                 
