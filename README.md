@@ -20,7 +20,7 @@ Este projeto é **didático** e está em evolução — já conta com funcionali
 ## 🚀 Funcionalidades futuras
 - Persistência de dados (salvar usuários em arquivo)
 - Implementação de relatórios de movimentação
-- Interface gráfica simples (opcional)
+- Interface gráfica simples 
 
 ---
 
